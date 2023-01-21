@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" 
+      rel="stylesheet"
+>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tailwind Portfolio</title>
+</head>
+<body class="font-nunito">
+    <!-- intro section-->
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200">
+        <!-- navbar -->
+        <nav class="w-full fixed top-0 bg-white">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <img class="w-8" src="./img/logo.png" alt="">
+                    <span class="text-2xl font-bold text-indigo-900">Portwind.</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+                    <li class="hover:text-gray-500"><a href="#">Homepage</a></li>
+                    <li class="hover:text-gray-500"><a href="#">About Me</a></li>
+                    <li class="hover:text-gray-500"><a href="#">Services</a></li>
+                    <li class="hover:text-gray-500"><a href="#">Works</a></li>
+                    <li class="hover:text-gray-500"><a href="#">Contact</a></li>
+                </ul>
+                <img class="hidden md:block w-5 cursor-pointer" src="./img/moon.png" alt="">
+                <div id="hamburguer" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu" class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- intro content -->
+        <div></div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
